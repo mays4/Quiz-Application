@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Quiz Application</string>
+    <string name="btn_true">True</string>
+    <string name="btn_false">False</string>
+    <string name="average">Get the Average</string>
+    <string name="num_question">Select the Number of Questions</string>
+    <string name="reset">Reset the Saved Result</string>
+    <string name="ok">Ok</string>
+    <string name="save">Save</string>
+    <string name="ignore">Ignore</string>
+    <string name="question_1">Is toronto is the capital of Canada</string>
+    <string name="question_2">Is Ottawa a capital of Canada</string>
+    <string name="question_3">is red essential  color</string>
+    <string name="question_4">Is O2 is the symbol of Oxygen</string>
+    <string name="question_5">The result of 2 + (4 * 4) equal 19 </string>
+    <string name="question_6">Is alligator mammal </string>
+    <string name="question_7">Are there 7 continents in the earth</string>
+    <string name="question_8">Are there 9 planets</string>
+    <string name="question_9">are danseuses extinction 65 million years</string>
+    <string name="question_10">Is Mesopotamia is the first civilization on the world</string>
+    <string name="result">Result</string>
+    <string name="cancel">Cancel</string>
+    <string name ="confirm">Confirm</string>
+
+</resources>

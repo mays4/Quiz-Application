@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق اسئلة واجوبة </string>
+    <string name="btn_true">صح </string>
+    <string name="btn_false">خطا</string>
+    <string name="average">احصل على المعدل</string>
+    <string name="num_question">اختر عدد الاسئلة </string>
+    <string name="reset">اعادة ضبط النتيجة المخزتة</string>
+    <string name="ok">موافق</string>
+    <string name="save">حفظ</string>
+    <string name="ignore">اهمال</string>
+    <string name="question_1">هل تورنتو عاصمة كندا</string>
+    <string name="question_2">هل اتاوا هي عاصمة كندا</string>
+    <string name="question_3">هل اللون الاحمر من الالوان الاساسية </string>
+    <string name="question_4"> هل  O2  الرمز الكميائي للاوكسجين  </string>
+    <string name="question_5">نتيجة ٢ + (٤*٤) تساوي ١٩  </string>
+    <string name="question_6">هل التمساح من الثديات</string>
+    <string name="question_7">يوجد ٧ قارات في العالم </string>
+    <string name="question_8">يوجد ٩ كواكب </string>
+    <string name="question_9">هل انقرض الديناصور قبل ٦٥ مليون سنة </string>
+    <string name="question_10">هل حضارة مابين النهرين اول حضاره في العالم </string>
+    <string name="result">النتيجة</string>
+    <string name="cancel">اهمال</string>
+    <string name ="confirm">تأكيد</string>
+</resources>
