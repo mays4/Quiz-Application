@@ -12,13 +12,19 @@ import androidx.fragment.app.Fragment;
 
 public class QuestionFragment extends Fragment {
 
-    private  String questionText;
-    private int questionColor;
-    private int numberOfQuestions;
+     static String questionText;
+ static int questionColor;
+ static int numberOfQuestions;
 
 
     public QuestionFragment() {
 
+    }
+    public static QuestionFragment newInstance(String text,int color,int numberOfQuestions){
+        QuestionFragment questionF = new   QuestionFragment();
+        questionText = text;
+        questionColor = color;
+        return questionF ;
     }
 
     @Nullable
@@ -28,17 +34,14 @@ public class QuestionFragment extends Fragment {
          View view = inflater.inflate(R.layout.fragment_question,container,false);
         TextView questionView = view.findViewById(R.id.questionView);
         questionView.setText(questionText);
-        view.setBackgroundColor(getResources().getColor(questionColor, null));
+        view.setBackgroundResource(questionColor);
         Bundle bundle = getArguments();
         if (bundle != null) {
-            numberOfQuestions = bundle.getInt("numberOfQuestions", 10); // Default to 10 if not found
+            numberOfQuestions = bundle.getInt("numberOfQuestions", 10);
         }
 
         return view;
     }
-    public void updateQuestionDetails(String text, int color,int numberOfQuestions) {
-        this.questionText = text;
-        this.questionColor = color;
-    }
+
 
 }

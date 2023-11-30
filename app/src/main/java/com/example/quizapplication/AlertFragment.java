@@ -11,10 +11,10 @@ import androidx.fragment.app.DialogFragment;
 public class AlertFragment extends DialogFragment {
 
     static String msg ;
-    static  int att;
+
     public static AlertFragment newInstance(String m){
         msg = m;
-//        att = attempt;
+
         return new AlertFragment();
     }
 

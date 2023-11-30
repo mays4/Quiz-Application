@@ -22,4 +22,6 @@
     <string name="result">النتيجة</string>
     <string name="cancel">اهمال</string>
     <string name ="confirm">تأكيد</string>
+    <string name ="correct">اجابة صحيحة</string>
+    <string name ="wrong">اجابة خاطئة</string>
 </resources>
