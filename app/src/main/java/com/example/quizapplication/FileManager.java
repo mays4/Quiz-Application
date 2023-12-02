@@ -21,25 +21,7 @@ public class FileManager {
 
             try (BufferedReader reader = new BufferedReader(inputStreamReader)) {
                 String line = reader.readLine();
-//
-//                // Read the existing values
-//                int existingTotalCorrect = 0;
-//                int existingTotalQuestions = 0;
-//                int existingTotalAttempt = 0;
-//
-//                if (line != null) {
-//                    String[] parts = line.split("-");
-//                    if (parts.length == 3) {
-//                        existingTotalCorrect = Integer.parseInt(parts[0]);
-//                        existingTotalQuestions = Integer.parseInt(parts[1]);
-//                        existingTotalAttempt = Integer.parseInt(parts[2]);
-//                    }
-//                }
-//
-//                // Update the values
-//                existingTotalCorrect += totalCorrect;
-//                existingTotalQuestions += totalQuestions;
-//                existingTotalAttempt += totalAttempt;
+
 
                 // Write the updated values back
                 FileOutputStream fos = context.openFileOutput(fileName, Context.MODE_PRIVATE);
