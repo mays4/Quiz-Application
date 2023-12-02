@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentManager;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -30,7 +29,6 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
     int correctAnswer = 0;
     int attempt = 0;
     int totalCorrect = 0;
-
 
     ProgressBar progressBar;
     FileManager fm ;
@@ -94,8 +92,6 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         attemptBN = Integer.parseInt(res[2].trim());
 
 
-
-
         fragmentManager = getSupportFragmentManager();
         f = fragmentManager.findFragmentById(R.id.frame_layout);
         if(f!= null){
@@ -147,7 +143,6 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
     }
 
 
-
     private void checkAnswer(Boolean answer) {
         if (answer == questionsArray.get(currentQuestionIndex).getAnswer()) {
             correctAnswer++;
@@ -179,7 +174,6 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
             loadFragment(questionsArray.get(currentQuestionIndex).getText(),
                     questionsArray.get(currentQuestionIndex).getColor(),
                     updateNumberOfQuestions(numberOfQuestions));
-
 
         }
     }
@@ -229,11 +223,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
                     questionsBN = Integer.parseInt(res[1].trim());
                     attemptBN = Integer.parseInt(res[2].trim());
 
-
                    int  currentAttemptCorrect = answerBN + totalCorrect;
-
-
-
                     totalAttempt = attemptBN + 1;
 
 
@@ -246,7 +236,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
                 })
                 .setNegativeButton(getString(R.string.ignore), null)
                 .create();
-// Reset totalQuestions to 0
+
         totalQuestions = 0;
 
         AlertDialog alertDialog = builder.create();
@@ -259,8 +249,6 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
             attempt = 0;
             totalCorrect = 0;
             fm.deleteAllResult(MainActivity.this);
-
-
 
         }).setNegativeButton(getString(R.string.ignore), null);
 
@@ -304,19 +292,13 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.average:
-//                Log.d("resul",fm.getResult(MainActivity.this)+"");
                 res= fm.getResult(this).split("-");
-                Log.d("resul",fm.getResult(MainActivity.this)+"");
                 int ans=Integer.parseInt(res[0].trim());
                 int q= Integer.parseInt(res[1].trim());
                 int att = Integer.parseInt(res[2].trim());
 
-
-
                 AlertFragment alertFragment = AlertFragment.newInstance(ans,q,att );
-//                AlertFragment alertFragment = AlertFragment.newInstance(fm.getResult(MainActivity.this));
                 alertFragment.show(getSupportFragmentManager(), "AlertFragmentTag");
-                startQuiz();
                 return  true;
 
             case R.id.number_question:
