@@ -3,22 +3,17 @@ package com.example.quizapplication;
 import android.content.Context;
 
 import java.util.ArrayList;
-import java.util.Collections;
+
 
 public class QuestionBank {
 
     private final ArrayList<Question> questions;
-
-
 
     public QuestionBank(Context context,int numberOfQuestions) {
         this.questions = new ArrayList<>(0);
         initializeQuestions(context);
        setNumberOfQuestions(numberOfQuestions);
     }
-
-
-
 
     private void initializeQuestions(Context context) {
 
@@ -38,7 +33,6 @@ public class QuestionBank {
 
     public void setNumberOfQuestions(int numberOfQuestions) {
         if (numberOfQuestions < questions.size()) {
-            Collections.shuffle(questions);
             questions.subList(numberOfQuestions, questions.size()).clear();
         }
     }
@@ -47,6 +41,7 @@ public class QuestionBank {
 
         return new ArrayList<>(questions);
     }
+
 
 }
 

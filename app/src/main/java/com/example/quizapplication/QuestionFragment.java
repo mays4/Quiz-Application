@@ -11,11 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 public class QuestionFragment extends Fragment {
-
-     static String questionText;
- static int questionColor;
- static int numberOfQuestions;
-
+    static String questionText;
+    static int questionColor;
+   static int numberOfQuestions;
 
     public QuestionFragment() {
 
@@ -30,8 +28,8 @@ public class QuestionFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-//         super.onCreateView(inflater, container, savedInstanceState);
-         View view = inflater.inflate(R.layout.fragment_question,container,false);
+
+        View view = inflater.inflate(R.layout.fragment_question,container,false);
         TextView questionView = view.findViewById(R.id.questionView);
         questionView.setText(questionText);
         view.setBackgroundResource(questionColor);

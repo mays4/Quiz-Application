@@ -7,8 +7,8 @@ import java.util.ArrayList;
 
 public class MyApp extends Application {
     ArrayList<Question> questions;
+    int numberOfQuestions;
 
-//int numberOfQuestions;
 
     FileManager fileManager = new FileManager();
 
@@ -19,11 +19,11 @@ public class MyApp extends Application {
         return questions;
     }
 
-//    public void setNumberOfQuestions(int numberOfQuestions) {
-//
-//        this.numberOfQuestions=numberOfQuestions;
-//    }
 
+
+    public int getNumberOfQuestions() {
+        return numberOfQuestions;
+    }
 
     public void setQuestions(ArrayList<Question> questions) {
         this.questions = questions;
